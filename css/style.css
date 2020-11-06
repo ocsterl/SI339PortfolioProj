@@ -295,7 +295,7 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
+    background-color: #FF0000;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -315,7 +315,6 @@ button:hover {
     margin: 24px 0 12px 0;
 }
   
-  /* Avatar image */
 img.car {
     width: 40%;
     border-radius: 50%;
@@ -325,20 +324,8 @@ img.car {
 .container {
   padding: 16px;
   }
-  
-  /* The "Forgot password" text */
 
   
-  /* Change styles for span and cancel button on extra small screens */
-/* @media screen and (max-width: 300px) {
-    span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
-    }
-}  */
 @media screen and (prefers-reduced-motion: reduce){
     html{
         scroll-behavior: auto; 

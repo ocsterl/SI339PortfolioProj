@@ -110,6 +110,10 @@ header p{
     align-self: center;
 }
 
+#history-text-block:visited{ 
+    color: white;
+}
+
 #now-text-block{ 
     background-color:rgba(73, 72, 72, 0.8);
     border: 10px solid #fa0000; 

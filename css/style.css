@@ -32,7 +32,7 @@ p {
 }
 
 nav a{
-    color: #FFFFFF;
+    color: #000000;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -295,7 +295,7 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
 button {
-    background-color: #e5f5f0;
+    background-color: #f1f8f6;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

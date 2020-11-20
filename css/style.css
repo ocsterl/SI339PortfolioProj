@@ -29,6 +29,7 @@ nav li{
 
 p {
     padding: 0 30px;
+    text-align: center;
 }
 
 nav a{
@@ -138,6 +139,13 @@ header p{
 .flex-container>div {
     background-color: #FF0000; 
     color:#FFFFFF;
+}
+
+.grid-item {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }
   
 .team-ar,.team-at, .team-h, .team-f, .team-mc, .team-mr, .team-rp, .team-rb, .team-r, .team-w {
@@ -279,15 +287,14 @@ header > h3{
     }   
 }
 
- /* Bordered form */
 form {
-    border: 3px solid #f1f1f1;
+    border: 8px solid #f1f1f1;
 }
   
 /* Full-width inputs */
-input[type=text], input[type=password] {
+input[type=text], input[type=subject], select{
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 12px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -299,10 +306,11 @@ button {
     background-color: #f1dc61;
     color: black;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px;
     border: none;
     cursor: pointer;
     width: 100%;
+    font-weight: bold;
 }
   
   /* Add a hover effect for buttons */
@@ -326,6 +334,20 @@ img.car {
   padding: 16px;
   }
 
+.parallax {
+    /* The image used */
+    background-image: url('imgs/parallax.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   
 @media screen and (prefers-reduced-motion: reduce){
     html{
@@ -337,4 +359,4 @@ img.car {
     }
     #logo{
         animation: none;
-}
+    }

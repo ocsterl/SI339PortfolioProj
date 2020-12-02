@@ -268,24 +268,23 @@ header > h3{
     color: black;
 }
 
-@-webkit-keyframes logo_wiggle{
-    /*Your code here.*/
-    from{
-      width: 25px;
-    }
-    to{
-      width: 420px;
-    }
-  }
+@keyframes example {
+    0%   {background-image: url(../imgs/contact.png); left:0px; top:0px;}
+    25%  {background-color:url(../imgs/contact.png); left:200px; top:0px;}
+    50%  {background-color:url(../imgs/contact.png); left:200px; top:200px;}
+    75%  {background-color:url(../imgs/contact.png); left:0px; top:200px;}
+    100% {background-color:url(../imgs/contact.png); left:0px; top:0px;}
+}
+
+#imgcontainer {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
   
-@keyframes logo_wiggle{
-    from{
-      width: 25px;
-    }
-    to{
-      width: 420px;
-    }
-  }
 
 #logo{
     /*Your code here.*/

@@ -37,17 +37,10 @@ p {
     box-sizing: border-box;
   }
   
-  /* Style the top navigation bar */
-.nav_links {
-    overflow: hidden;
-    background-color: #333;
-}
-  
-  /* Style the topnav links */
 .nav_links a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #FFFFFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -55,12 +48,12 @@ p {
   
   /* Change color on hover */
 .nav_links a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 254, 254);
 }
 
-,nav a{
-    color: #000000;
+.nav a{
+    color: #ffffff;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -71,11 +64,11 @@ nav a:hover{
 }
 
 nav .current{
-    text-decoration:underline black;
+    text-decoration:underline rgb(248, 2, 2);
 }
 
 .skip a{
-    background: black;
+    background: rgb(14, 14, 14);
     color: white;
     left: 0;
     padding: 6px;
@@ -95,7 +88,7 @@ nav .current{
 }
 
 nav{
-    background-color: #FF0000;
+    background-color: #302e2e;
     padding: 8px 0;
     text-align: center;
 }
@@ -294,22 +287,28 @@ header > h3{
     color: black;
 }
 
-@keyframes example {
-    0%   {background-image: url(../imgs/contact.png); left:0px; top:0px;}
-    25%  {background-color:url(../imgs/contact.png); left:200px; top:0px;}
-    50%  {background-color:url(../imgs/contact.png); left:200px; top:200px;}
-    75%  {background-color:url(../imgs/contact.png); left:0px; top:200px;}
-    100% {background-color:url(../imgs/contact.png); left:0px; top:0px;}
-}
-
-#imgcontainer {
+#example{
     width: 100px;
     height: 100px;
-    background-color: red;
     position: relative;
     animation-name: example;
     animation-duration: 4s;
+    animation-timing-function: ease-in-out;
 }
+
+#div1 {
+    font-size:48px;
+}
+
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+
   
 
 #logo{

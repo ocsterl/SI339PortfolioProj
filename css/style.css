@@ -287,39 +287,38 @@ header > h3{
     color: black;
 }
 
-#example{
+@-webkit-keyframes logo_wiggle{
+    /*Your code here.*/
+    from{
+      width: 25px;
+    }
+    to{
+      width: 200px;
+    }
+  }
+  
+  @keyframes logo_wiggle{
+    from{
+      width: 25px;
+    }
+    to{
+      width: 200px;
+    }
+  }
+
+#logo{
     width: 100px;
     height: 100px;
     position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-}
+    animation-name: logo_wiggle;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+ }
 
 #div1 {
     font-size:48px;
 }
-
-@keyframes example {
-    0%   {left:0px; top:0px;}
-    25%  {left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
-    75%  { left:0px; top:200px;}
-    100% {left:0px; top:0px;}
-}
-
-
-  
-
-#logo{
-    /*Your code here.*/
-    max-width: 100px;
-    max-height: 100px;
-    align-items: center;
-    animation-name: logo_wiggle;
-    animation-duration: 15s;
-    animation-iteration-count: 1;
- }
+ 
 
 @media all and (min-width: 800px){
     nav{
@@ -426,4 +425,11 @@ img.car {
     }
     #logo{
         animation: none;
+    }
+
+@media screen and (max-width: 800px) {
+        .nav_links a {
+          float: none;
+          width: 100%;
+        }
     }
